@@ -1,5 +1,6 @@
-function mincost(arr) {
-    // Create a min-heap (priority queue)
+function mincost(arr)
+{ 
+     // Create a min-heap (priority queue)
     const minHeap = new MinHeap();
 
     // Insert all rope lengths into the min-heap
@@ -28,9 +29,4 @@ function mincost(arr) {
     return totalCost;
 }
 
-// Example usage:
-const ropes1 = [4, 3, 2, 6];
-console.log(mincost(ropes1)); // Output: 29
-
-const ropes2 = [1, 2, 3, 4, 5];
-console.log(mincost(ropes2)); // Output: 9
+module.exports=mincost;
